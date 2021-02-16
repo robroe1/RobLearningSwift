@@ -23,16 +23,36 @@ class BirthdateRegistration: UIViewController {
         SubmitButton.layer.borderColor = UIColor.white.cgColor
 
         SubmitButton.layer.cornerRadius = SubmitButton.frame.height / 2
-
-       
         
-      
-      
-        
-       
-    }
+     }
     
 
+    
+    @IBAction func PrivacyPolicyClicked(_ sender: UIButton) {
+        
+        if let url = URL(string: "https://madlyradlabs.com/madlyrad-_-privacy-policy/"){
+        
+            UIApplication.shared.open(url)
+            
+        }
+    
+    
+    }
+    
+    
+    @IBAction func TermsServiceClick(_ sender: UIButton) {
+    
+        if let url = URL(string: "https://madlyradlabs.com/madlyrad-_-terms-of-service/"){
+        
+            UIApplication.shared.open(url)
+            
+        }
+    }
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
