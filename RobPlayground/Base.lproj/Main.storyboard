@@ -470,11 +470,29 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjf-cT-e5t">
-                                <rect key="frame" x="87" y="371" width="246" height="48"/>
+                                <rect key="frame" x="84" y="366" width="246" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.67867623730000004" green="0.67867623730000004" blue="0.67867623730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="she, her">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boc-OX-vYD">
+                                <rect key="frame" x="84" y="435" width="246" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67867623730000004" green="0.67867623730000004" blue="0.67867623730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="he, him">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX3-rU-tUY">
+                                <rect key="frame" x="84" y="511" width="246" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.67867623730000004" green="0.67867623730000004" blue="0.67867623730000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="they, them">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -484,7 +502,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="1UU-g4-uKh"/>
                     <connections>
+                        <outlet property="HeHimButton" destination="boc-OX-vYD" id="cbi-xD-Zge"/>
                         <outlet property="NextButton" destination="Tfg-to-f9k" id="wCE-lc-Z6i"/>
+                        <outlet property="SheHerButton" destination="pjf-cT-e5t" id="TCh-RX-wC4"/>
+                        <outlet property="TheyThemButton" destination="bX3-rU-tUY" id="ZIp-WM-FDf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFe-LM-sLQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -709,6 +730,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="WH0-Pr-sZ0"/>
         <segue reference="g8p-yD-b5z"/>
         <segue reference="ile-Sz-zfG"/>
         <segue reference="JSa-BT-wy8"/>
