@@ -11,6 +11,7 @@ class FirstNameRegistration: UIViewController {
 
     @IBOutlet var NextButton: UIButton!
     
+    @IBOutlet var BackButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

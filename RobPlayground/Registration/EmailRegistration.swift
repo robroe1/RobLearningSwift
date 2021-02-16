@@ -1,5 +1,5 @@
 //
-//  UsernameRegistration.swift
+//  EmailRegistration.swift
 //  RobPlayground
 //
 //  Created by Robert Roe on 2/15/21.
@@ -7,16 +7,15 @@
 
 import UIKit
 
-class UsernameRegistration: UIViewController {
+class EmailRegistration: UIViewController {
 
-    
     @IBOutlet var NextButton: UIButton!
     
     @IBOutlet var BackButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
         NextButton.layer.borderWidth = 2
         
@@ -24,7 +23,7 @@ class UsernameRegistration: UIViewController {
 
         NextButton.layer.cornerRadius = NextButton.frame.height / 2
         
-        
+
         // Do any additional setup after loading the view.
     }
     

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1A1DC1725DB141F001F40DE /* PasscodeRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1DC1625DB141F001F40DE /* PasscodeRegistration.swift */; };
+		D1A1DC1C25DB1550001F40DE /* EmailRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1DC1B25DB1550001F40DE /* EmailRegistration.swift */; };
+		D1A1DC2425DB197A001F40DE /* BirthdateRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1DC2325DB197A001F40DE /* BirthdateRegistration.swift */; };
+		D1A1DC2C25DB1B5A001F40DE /* PronounsRegistraton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1DC2B25DB1B5A001F40DE /* PronounsRegistraton.swift */; };
 		D1B36D4525DA0A8800468207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B36D4425DA0A8800468207 /* AppDelegate.swift */; };
 		D1B36D4725DA0A8800468207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B36D4625DA0A8800468207 /* SceneDelegate.swift */; };
 		D1B36D4925DA0A8800468207 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B36D4825DA0A8800468207 /* ViewController.swift */; };
@@ -17,7 +21,8 @@
 		D1B36D6725DA0A8B00468207 /* RobPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B36D6625DA0A8B00468207 /* RobPlaygroundUITests.swift */; };
 		D1B36D7825DA0AE700468207 /* FirstNameRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B36D7725DA0AE700468207 /* FirstNameRegistration.swift */; };
 		D1B36D8A25DA1B2800468207 /* LastNameRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B36D8925DA1B2800468207 /* LastNameRegistration.swift */; };
-		D1B36D8F25DA1BAA00468207 /* UsernameRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B36D8E25DA1BAA00468207 /* UsernameRegistration.swift */; };
+		D1D16B4525DAEF290034505E /* UsernameRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D16B4425DAEF290034505E /* UsernameRegistration.swift */; };
+		D1E412EB25DAFC8E00B91B89 /* ProfileRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E412EA25DAFC8E00B91B89 /* ProfileRegistration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1A1DC1625DB141F001F40DE /* PasscodeRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeRegistration.swift; sourceTree = "<group>"; };
+		D1A1DC1B25DB1550001F40DE /* EmailRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegistration.swift; sourceTree = "<group>"; };
+		D1A1DC2325DB197A001F40DE /* BirthdateRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdateRegistration.swift; sourceTree = "<group>"; };
+		D1A1DC2B25DB1B5A001F40DE /* PronounsRegistraton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PronounsRegistraton.swift; sourceTree = "<group>"; };
 		D1B36D4125DA0A8800468207 /* RobPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1B36D4425DA0A8800468207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1B36D4625DA0A8800468207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +63,8 @@
 		D1B36D6825DA0A8B00468207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1B36D7725DA0AE700468207 /* FirstNameRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstNameRegistration.swift; sourceTree = "<group>"; };
 		D1B36D8925DA1B2800468207 /* LastNameRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastNameRegistration.swift; sourceTree = "<group>"; };
-		D1B36D8E25DA1BAA00468207 /* UsernameRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameRegistration.swift; sourceTree = "<group>"; };
+		D1D16B4425DAEF290034505E /* UsernameRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameRegistration.swift; sourceTree = "<group>"; };
+		D1E412EA25DAFC8E00B91B89 /* ProfileRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegistration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +150,12 @@
 			children = (
 				D1B36D7725DA0AE700468207 /* FirstNameRegistration.swift */,
 				D1B36D8925DA1B2800468207 /* LastNameRegistration.swift */,
-				D1B36D8E25DA1BAA00468207 /* UsernameRegistration.swift */,
+				D1D16B4425DAEF290034505E /* UsernameRegistration.swift */,
+				D1A1DC1625DB141F001F40DE /* PasscodeRegistration.swift */,
+				D1A1DC1B25DB1550001F40DE /* EmailRegistration.swift */,
+				D1A1DC2B25DB1B5A001F40DE /* PronounsRegistraton.swift */,
+				D1A1DC2325DB197A001F40DE /* BirthdateRegistration.swift */,
+				D1E412EA25DAFC8E00B91B89 /* ProfileRegistration.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -275,11 +290,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E412EB25DAFC8E00B91B89 /* ProfileRegistration.swift in Sources */,
 				D1B36D4925DA0A8800468207 /* ViewController.swift in Sources */,
+				D1A1DC1725DB141F001F40DE /* PasscodeRegistration.swift in Sources */,
 				D1B36D7825DA0AE700468207 /* FirstNameRegistration.swift in Sources */,
-				D1B36D8F25DA1BAA00468207 /* UsernameRegistration.swift in Sources */,
+				D1A1DC2C25DB1B5A001F40DE /* PronounsRegistraton.swift in Sources */,
+				D1A1DC2425DB197A001F40DE /* BirthdateRegistration.swift in Sources */,
+				D1D16B4525DAEF290034505E /* UsernameRegistration.swift in Sources */,
 				D1B36D8A25DA1B2800468207 /* LastNameRegistration.swift in Sources */,
 				D1B36D4525DA0A8800468207 /* AppDelegate.swift in Sources */,
+				D1A1DC1C25DB1550001F40DE /* EmailRegistration.swift in Sources */,
 				D1B36D4725DA0A8800468207 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

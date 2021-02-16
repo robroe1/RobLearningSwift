@@ -1,5 +1,5 @@
 //
-//  UsernameRegistration.swift
+//  PasscodeRegistration.swift
 //  RobPlayground
 //
 //  Created by Robert Roe on 2/15/21.
@@ -7,25 +7,24 @@
 
 import UIKit
 
-class UsernameRegistration: UIViewController {
+class PasscodeRegistration: UIViewController {
 
-    
+   
     @IBOutlet var NextButton: UIButton!
     
     @IBOutlet var BackButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         NextButton.layer.borderWidth = 2
         
         NextButton.layer.borderColor = UIColor.white.cgColor
 
         NextButton.layer.cornerRadius = NextButton.frame.height / 2
-        
-        
-        // Do any additional setup after loading the view.
+
+    
+            // Do any additional setup after loading the view.
     }
     
 

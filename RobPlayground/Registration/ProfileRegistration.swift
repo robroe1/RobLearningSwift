@@ -1,5 +1,5 @@
 //
-//  UsernameRegistration.swift
+//  ProfileRegistration.swift
 //  RobPlayground
 //
 //  Created by Robert Roe on 2/15/21.
@@ -7,9 +7,8 @@
 
 import UIKit
 
-class UsernameRegistration: UIViewController {
+class ProfileRegistration: UIViewController {
 
-    
     @IBOutlet var NextButton: UIButton!
     
     @IBOutlet var BackButton: UIButton!
@@ -20,10 +19,10 @@ class UsernameRegistration: UIViewController {
         
         NextButton.layer.borderWidth = 2
         
-        NextButton.layer.borderColor = UIColor.white.cgColor
+        NextButton.layer.borderColor = UIColor.black.cgColor
 
         NextButton.layer.cornerRadius = NextButton.frame.height / 2
-        
+      
         
         // Do any additional setup after loading the view.
     }
