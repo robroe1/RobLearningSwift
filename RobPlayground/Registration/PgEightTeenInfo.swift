@@ -16,6 +16,23 @@ class PgEightTeenInfo: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+ 
+    @IBAction func RecordLabelClicked(_ sender: UIButton) {
+   
+        
+        if let url = URL(string: "https://HRWMusicGroup.com"){
+        
+            UIApplication.shared.open(url)
+            
+        }
+    
+    
+    }
+    
+    
+   
+  
+        
 
     /*
     // MARK: - Navigation
