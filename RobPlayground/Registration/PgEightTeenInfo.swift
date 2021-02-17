@@ -18,19 +18,23 @@ class PgEightTeenInfo: UIViewController {
     
  
     @IBAction func RecordLabelClicked(_ sender: UIButton) {
-   
-        
         if let url = URL(string: "https://HRWMusicGroup.com"){
         
             UIApplication.shared.open(url)
             
         }
+}
+
     
-    
+    @IBAction func TeamPageWebClicked(_ sender: UIButton) {
+        if let url = URL(string: "https://https://madlyradlabs.web.app/team.html"){
+        
+            UIApplication.shared.open(url)
+            
+        }
+        
     }
     
-    
-   
   
         
 

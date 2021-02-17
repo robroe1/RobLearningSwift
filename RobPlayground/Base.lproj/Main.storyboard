@@ -43,16 +43,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationBkgd" translatesAutoresizingMaskIntoConstraints="NO" id="rxh-fo-clc">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationBkgd" translatesAutoresizingMaskIntoConstraints="NO" id="U42-D0-nSe">
                                 <rect key="frame" x="6" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationBkgd" translatesAutoresizingMaskIntoConstraints="NO" id="481-hD-EEf">
-                                <rect key="frame" x="-14" y="10" width="438" height="886"/>
+                                <rect key="frame" x="-6" y="10" width="438" height="886"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationBkgd" translatesAutoresizingMaskIntoConstraints="NO" id="rxh-fo-clc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi, what's your first name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMv-9U-n8z">
@@ -185,10 +185,6 @@
                                     <segue destination="FUb-co-1qD" kind="presentation" identifier="BackButtonBirthdateRegistration" modalPresentationStyle="fullScreen" id="JSa-BT-wy8"/>
                                 </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Pi-mo-dtR">
-                                <rect key="frame" x="-1" y="238" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select your Birthdate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3a-Hv-xQ6">
                                 <rect key="frame" x="17" y="127" width="392" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -218,11 +214,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationBkgd" translatesAutoresizingMaskIntoConstraints="NO" id="rXV-67-MYo">
-                                <rect key="frame" x="-16" y="-57" width="430" height="903"/>
+                                <rect key="frame" x="-16" y="-7" width="430" height="903"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationBkgd" translatesAutoresizingMaskIntoConstraints="NO" id="VGQ-z9-HM2">
-                                <rect key="frame" x="-6" y="-91" width="426" height="953"/>
+                                <rect key="frame" x="-10" y="-28" width="426" height="953"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Penguin Sticker 38" translatesAutoresizingMaskIntoConstraints="NO" id="0pD-DU-3n0">
@@ -672,16 +668,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationBkgd" translatesAutoresizingMaskIntoConstraints="NO" id="MZw-ri-qsS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationBkgd" translatesAutoresizingMaskIntoConstraints="NO" id="oiZ-aj-gzE">
                                 <rect key="frame" x="6" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationBkgd" translatesAutoresizingMaskIntoConstraints="NO" id="CyL-TV-zTh">
-                                <rect key="frame" x="-19" y="6" width="443" height="890"/>
+                                <rect key="frame" x="-9" y="-10" width="443" height="890"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationBkgd" translatesAutoresizingMaskIntoConstraints="NO" id="MZw-ri-qsS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's your email?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCL-bT-ZAK">
@@ -953,18 +949,6 @@
                                     <segue destination="H58-C2-nOZ" kind="presentation" identifier="PgEightTeensBackButtonInfo" modalPresentationStyle="fullScreen" id="olp-JH-6f0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et0-xv-ZE8">
-                                <rect key="frame" x="20" y="523" width="374" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Built by Teens"/>
-                                <connections>
-                                    <action selector="PrivacyPolicyClicked:" destination="yEw-nd-DfK" eventType="touchUpInside" id="HY4-hh-ga2"/>
-                                    <action selector="RecordLabelClicked:" destination="yEw-nd-DfK" eventType="touchUpInside" id="M1W-Tp-xKA"/>
-                                    <action selector="TeamPgWebClicked:" destination="yEw-nd-DfK" eventType="touchUpInside" id="Wl2-iq-VWM"/>
-                                    <action selector="TermsServiceClick:" destination="3GN-rs-qtA" eventType="touchUpInside" id="K3r-Yf-0gb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-1v-cWw">
                                 <rect key="frame" x="20" y="406" width="374" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -974,9 +958,16 @@
                                     <color key="titleColor" systemColor="linkColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="HRWMusicClick:" destination="yEw-nd-DfK" eventType="touchUpInside" id="4b8-s5-yG2"/>
-                                    <action selector="PrivacyPolicyClicked:" destination="3GN-rs-qtA" eventType="touchUpInside" id="wFr-EG-b8K"/>
-                                    <action selector="RecordLabelClicked:" destination="yEw-nd-DfK" eventType="touchUpInside" id="nRR-uJ-UZ0"/>
+                                    <action selector="RecordLabelClicked:" destination="yEw-nd-DfK" eventType="touchUpInside" id="nCM-X9-LH5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et0-xv-ZE8">
+                                <rect key="frame" x="20" y="523" width="374" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Built by Teens"/>
+                                <connections>
+                                    <action selector="TeamPageWebClicked:" destination="yEw-nd-DfK" eventType="touchUpInside" id="M6M-Wh-nRO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1237,14 +1228,14 @@
         <segue reference="mRL-Xr-YsW"/>
         <segue reference="kfW-GA-POW"/>
         <segue reference="p7m-kt-WFQ"/>
-        <segue reference="JHp-ai-fIj"/>
-        <segue reference="JSa-BT-wy8"/>
+        <segue reference="ile-Sz-zfG"/>
+        <segue reference="Gue-5K-AUA"/>
         <segue reference="bI6-lb-2GL"/>
         <segue reference="3SS-At-XJn"/>
-        <segue reference="bsm-EH-mMZ"/>
+        <segue reference="dha-Gm-GFf"/>
         <segue reference="zIU-sf-WeK"/>
         <segue reference="bfK-5O-0Ik"/>
-        <segue reference="OBt-9V-Sva"/>
+        <segue reference="nVO-7N-cTw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1234" width="1024" height="1024"/>
