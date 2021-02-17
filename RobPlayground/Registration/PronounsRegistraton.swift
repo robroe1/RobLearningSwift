@@ -20,6 +20,10 @@ class PronounsRegistraton: UIViewController {
     
     @IBOutlet var TheyThemButton: UIButton!
     
+    
+    @IBOutlet var OtherButton: UIButton!
+    
+    
     @IBOutlet var BackButton: UIButton!
     
     override func viewDidLoad() {
@@ -56,6 +60,12 @@ class PronounsRegistraton: UIViewController {
         TheyThemButton.layer.cornerRadius = NextButton.frame.height / 2
         
         
+        
+        OtherButton.layer.borderWidth = 2
+        
+        OtherButton.layer.borderColor = UIColor.white.cgColor
+
+        OtherButton.layer.cornerRadius = NextButton.frame.height / 2
         
         
         

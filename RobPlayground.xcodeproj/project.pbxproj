@@ -23,6 +23,14 @@
 		D1B36D8A25DA1B2800468207 /* LastNameRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B36D8925DA1B2800468207 /* LastNameRegistration.swift */; };
 		D1D16B4525DAEF290034505E /* UsernameRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D16B4425DAEF290034505E /* UsernameRegistration.swift */; };
 		D1E412EB25DAFC8E00B91B89 /* ProfileRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E412EA25DAFC8E00B91B89 /* ProfileRegistration.swift */; };
+		D1EFA2C125DC4EF900EC6B10 /* PgOneSpecialInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFA2C025DC4EF900EC6B10 /* PgOneSpecialInfo.swift */; };
+		D1EFA2C625DC4F4C00EC6B10 /* PgTwoNowInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFA2C525DC4F4C00EC6B10 /* PgTwoNowInfo.swift */; };
+		D1EFA2D025DC504100EC6B10 /* PgFourBadInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFA2CF25DC504100EC6B10 /* PgFourBadInfo.swift */; };
+		D1EFA2D825DC506300EC6B10 /* PgThreeStopInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFA2D725DC506300EC6B10 /* PgThreeStopInfo.swift */; };
+		D1EFA2DD25DC508100EC6B10 /* PgFiveRelaxInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFA2DC25DC508100EC6B10 /* PgFiveRelaxInfo.swift */; };
+		D1EFA2E225DC50A600EC6B10 /* PgSevenSmilesInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFA2E125DC50A600EC6B10 /* PgSevenSmilesInfo.swift */; };
+		D1EFA2E725DC50C000EC6B10 /* PgEightTeenInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFA2E625DC50C000EC6B10 /* PgEightTeenInfo.swift */; };
+		D1EFA2EC25DC50FD00EC6B10 /* PgSixPinInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFA2EB25DC50FD00EC6B10 /* PgSixPinInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +73,14 @@
 		D1B36D8925DA1B2800468207 /* LastNameRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastNameRegistration.swift; sourceTree = "<group>"; };
 		D1D16B4425DAEF290034505E /* UsernameRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameRegistration.swift; sourceTree = "<group>"; };
 		D1E412EA25DAFC8E00B91B89 /* ProfileRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRegistration.swift; sourceTree = "<group>"; };
+		D1EFA2C025DC4EF900EC6B10 /* PgOneSpecialInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgOneSpecialInfo.swift; sourceTree = "<group>"; };
+		D1EFA2C525DC4F4C00EC6B10 /* PgTwoNowInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgTwoNowInfo.swift; sourceTree = "<group>"; };
+		D1EFA2CF25DC504100EC6B10 /* PgFourBadInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgFourBadInfo.swift; sourceTree = "<group>"; };
+		D1EFA2D725DC506300EC6B10 /* PgThreeStopInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgThreeStopInfo.swift; sourceTree = "<group>"; };
+		D1EFA2DC25DC508100EC6B10 /* PgFiveRelaxInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgFiveRelaxInfo.swift; sourceTree = "<group>"; };
+		D1EFA2E125DC50A600EC6B10 /* PgSevenSmilesInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgSevenSmilesInfo.swift; sourceTree = "<group>"; };
+		D1EFA2E625DC50C000EC6B10 /* PgEightTeenInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgEightTeenInfo.swift; sourceTree = "<group>"; };
+		D1EFA2EB25DC50FD00EC6B10 /* PgSixPinInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PgSixPinInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +172,14 @@
 				D1A1DC2B25DB1B5A001F40DE /* PronounsRegistraton.swift */,
 				D1A1DC2325DB197A001F40DE /* BirthdateRegistration.swift */,
 				D1E412EA25DAFC8E00B91B89 /* ProfileRegistration.swift */,
+				D1EFA2C025DC4EF900EC6B10 /* PgOneSpecialInfo.swift */,
+				D1EFA2C525DC4F4C00EC6B10 /* PgTwoNowInfo.swift */,
+				D1EFA2D725DC506300EC6B10 /* PgThreeStopInfo.swift */,
+				D1EFA2CF25DC504100EC6B10 /* PgFourBadInfo.swift */,
+				D1EFA2DC25DC508100EC6B10 /* PgFiveRelaxInfo.swift */,
+				D1EFA2EB25DC50FD00EC6B10 /* PgSixPinInfo.swift */,
+				D1EFA2E125DC50A600EC6B10 /* PgSevenSmilesInfo.swift */,
+				D1EFA2E625DC50C000EC6B10 /* PgEightTeenInfo.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -290,15 +314,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1EFA2D825DC506300EC6B10 /* PgThreeStopInfo.swift in Sources */,
 				D1E412EB25DAFC8E00B91B89 /* ProfileRegistration.swift in Sources */,
+				D1EFA2E725DC50C000EC6B10 /* PgEightTeenInfo.swift in Sources */,
 				D1B36D4925DA0A8800468207 /* ViewController.swift in Sources */,
 				D1A1DC1725DB141F001F40DE /* PasscodeRegistration.swift in Sources */,
 				D1B36D7825DA0AE700468207 /* FirstNameRegistration.swift in Sources */,
+				D1EFA2D025DC504100EC6B10 /* PgFourBadInfo.swift in Sources */,
 				D1A1DC2C25DB1B5A001F40DE /* PronounsRegistraton.swift in Sources */,
 				D1A1DC2425DB197A001F40DE /* BirthdateRegistration.swift in Sources */,
 				D1D16B4525DAEF290034505E /* UsernameRegistration.swift in Sources */,
+				D1EFA2DD25DC508100EC6B10 /* PgFiveRelaxInfo.swift in Sources */,
+				D1EFA2C625DC4F4C00EC6B10 /* PgTwoNowInfo.swift in Sources */,
+				D1EFA2EC25DC50FD00EC6B10 /* PgSixPinInfo.swift in Sources */,
+				D1EFA2C125DC4EF900EC6B10 /* PgOneSpecialInfo.swift in Sources */,
 				D1B36D8A25DA1B2800468207 /* LastNameRegistration.swift in Sources */,
 				D1B36D4525DA0A8800468207 /* AppDelegate.swift in Sources */,
+				D1EFA2E225DC50A600EC6B10 /* PgSevenSmilesInfo.swift in Sources */,
 				D1A1DC1C25DB1550001F40DE /* EmailRegistration.swift in Sources */,
 				D1B36D4725DA0A8800468207 /* SceneDelegate.swift in Sources */,
 			);
