@@ -18,17 +18,9 @@ class PronounsRegistraton: UIViewController {
 
 
     @IBOutlet var NextButton: UIButton!
-    
-    
     @IBOutlet var SheHerButton: UIButton!
-    
-    
     @IBOutlet var HeHimButton: UIButton!
-    
-    
     @IBOutlet var TheyThemButton: UIButton!
-    
-    
     @IBOutlet var OtherButton: UIButton!
     
     
@@ -83,18 +75,36 @@ class PronounsRegistraton: UIViewController {
     
     @IBAction func sheButtonClicked(_ sender: UIButton) {
         pronouns = "she/her"
+        HeHimButton.backgroundColor = .gray
+        TheyThemButton.backgroundColor = .gray
+        OtherButton.backgroundColor = .gray
+        SheHerButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+
+
     }
     
     @IBAction func heButtonClicked(_ sender: UIButton) {
         pronouns = "he/him"
+        HeHimButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        TheyThemButton.backgroundColor = .gray
+        OtherButton.backgroundColor = .gray
+        SheHerButton.backgroundColor = .gray
     }
     
     @IBAction func theyButtonClicked(_ sender: UIButton) {
         pronouns = "they/them"
+        HeHimButton.backgroundColor = .gray
+        TheyThemButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        OtherButton.backgroundColor = .gray
+        SheHerButton.backgroundColor = .gray
     }
     
     @IBAction func otherButtonClicked(_ sender: UIButton) {
         pronouns = "other"
+        HeHimButton.backgroundColor = .gray
+        TheyThemButton.backgroundColor = .gray
+        OtherButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        SheHerButton.backgroundColor = .gray
     }
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
