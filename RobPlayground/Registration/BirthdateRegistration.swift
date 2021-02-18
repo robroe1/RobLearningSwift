@@ -11,10 +11,14 @@ import Firebase
 
 class BirthdateRegistration: UIViewController {
     
-    var email = ""
-    var password = ""
-    var firstname = ""
-    var lastname = ""
+    public var firstname: String = ""
+    public var lastname: String = ""
+    public var username: String = ""
+    public var password: String = ""
+    public var email: String = ""
+    public var pronouns: String = ""
+    public var birthday: Timestamp = Timestamp()
+
 
     @IBOutlet var SubmitButton: UIButton!
     
@@ -30,6 +34,8 @@ class BirthdateRegistration: UIViewController {
         SubmitButton.layer.borderColor = UIColor.white.cgColor
 
         SubmitButton.layer.cornerRadius = SubmitButton.frame.height / 2
+        
+        print(firstname + " " + lastname + " " + username + " " + password + " " + email + " " + pronouns)
         
      }
     

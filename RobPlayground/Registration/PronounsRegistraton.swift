@@ -80,7 +80,41 @@ class PronounsRegistraton: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    @IBAction func sheButtonClicked(_ sender: UIButton) {
+        pronouns = "she/her"
+    }
+    
+    @IBAction func heButtonClicked(_ sender: UIButton) {
+        pronouns = "he/him"
+    }
+    
+    @IBAction func theyButtonClicked(_ sender: UIButton) {
+        pronouns = "they/them"
+    }
+    
+    @IBAction func otherButtonClicked(_ sender: UIButton) {
+        pronouns = "other"
+    }
+    
+    @IBAction func nextButtonClicked(_ sender: UIButton) {
+        performSegue(withIdentifier: "nextToBirthday", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is BirthdateRegistration
+        {
+            let vc = segue.destination as? BirthdateRegistration
+            vc?.firstname = self.firstname
+            vc?.lastname = self.lastname
+            vc?.username = self.username
+            vc?.password = self.password
+            vc?.email = self.email
+            vc?.pronouns = self.pronouns
 
+        }
+    }
     /*
     // MARK: - Navigation
 
