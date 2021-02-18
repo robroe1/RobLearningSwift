@@ -41,14 +41,14 @@ class PronounsRegistraton: UIViewController {
         
         SheHerButton.layer.borderColor = UIColor.white.cgColor
 
-        SheHerButton.layer.cornerRadius = NextButton.frame.height / 2
+        SheHerButton.layer.cornerRadius = OtherButton.frame.height / 2
         
       
         HeHimButton.layer.borderWidth = 2
         
         HeHimButton.layer.borderColor = UIColor.white.cgColor
 
-        HeHimButton.layer.cornerRadius = NextButton.frame.height / 2
+        HeHimButton.layer.cornerRadius = OtherButton.frame.height / 2
         
 
         
@@ -56,7 +56,7 @@ class PronounsRegistraton: UIViewController {
         
         TheyThemButton.layer.borderColor = UIColor.white.cgColor
 
-        TheyThemButton.layer.cornerRadius = NextButton.frame.height / 2
+        TheyThemButton.layer.cornerRadius = OtherButton.frame.height / 2
         
         
         
@@ -64,7 +64,7 @@ class PronounsRegistraton: UIViewController {
         
         OtherButton.layer.borderColor = UIColor.white.cgColor
 
-        OtherButton.layer.cornerRadius = NextButton.frame.height / 2
+        OtherButton.layer.cornerRadius = OtherButton.frame.height / 2
         
         
         print(firstname + " " + lastname + " " + username + " " + password + " " + email)

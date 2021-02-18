@@ -72,7 +72,11 @@ class FirstNameRegistration: UIViewController {
             vc?.firstname = self.firstname
         }
     }
+
     
+    @IBAction func textFieldClicked(_ sender: UITextField) {
+        sender.text = ""
+    }
     /*
     // MARK: - Navigation
 

@@ -69,6 +69,9 @@
                                 <color key="textColor" red="0.74892925126903553" green="0.74892925126903553" blue="0.74892925126903553" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="29"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldClicked:" destination="BxS-wF-ItL" eventType="touchDown" id="lpN-KA-A1H"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ri5-LF-zhv">
                                 <rect key="frame" x="74" y="528" width="279" height="58"/>
@@ -235,6 +238,9 @@
                                 <color key="textColor" red="0.74892925129999999" green="0.74892925129999999" blue="0.74892925129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="29"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldClicked:" destination="TQn-HB-LyZ" eventType="touchDown" id="p9n-I6-3a7"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSB-if-H7z">
                                 <rect key="frame" x="74" y="525" width="279" height="58"/>
@@ -309,6 +315,9 @@
                                 <color key="textColor" red="0.74892925129999999" green="0.74892925129999999" blue="0.74892925129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="29"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldClicked:" destination="pb2-Bs-ZdU" eventType="touchDown" id="TFJ-0X-hsd"/>
+                                </connections>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rog-Ug-aXS">
                                 <rect key="frame" x="83" y="404" width="240" height="1"/>
@@ -653,6 +662,9 @@
                                 <color key="textColor" red="0.74892925129999999" green="0.74892925129999999" blue="0.74892925129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="29"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldClicked:" destination="IbJ-UC-3mo" eventType="touchDown" id="Gah-Mz-Idu"/>
+                                </connections>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9lu-ze-eDC">
                                 <rect key="frame" x="83" y="404" width="240" height="1"/>
@@ -735,6 +747,9 @@
                                 <color key="textColor" red="0.74892925129999999" green="0.74892925129999999" blue="0.74892925129999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="29"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldClicked:" destination="26b-xC-iws" eventType="touchDown" id="64C-wh-4jF"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U96-9f-283">
                                 <rect key="frame" x="74" y="528" width="279" height="59"/>
@@ -1329,9 +1344,9 @@
         <segue reference="QmV-pW-giQ"/>
         <segue reference="mRL-Xr-YsW"/>
         <segue reference="E89-aJ-Aw1"/>
-        <segue reference="g8p-yD-b5z"/>
+        <segue reference="cIr-Al-gKO"/>
         <segue reference="ile-Sz-zfG"/>
-        <segue reference="JSa-BT-wy8"/>
+        <segue reference="DPY-XL-YQO"/>
         <segue reference="bI6-lb-2GL"/>
         <segue reference="lbF-7C-UC9"/>
         <segue reference="bsm-EH-mMZ"/>

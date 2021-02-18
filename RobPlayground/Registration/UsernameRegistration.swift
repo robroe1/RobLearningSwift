@@ -64,8 +64,11 @@ class UsernameRegistration: UIViewController {
         }
     }
     
-
-
+   
+    @IBAction func textFieldClicked(_ sender: UITextField) {
+        sender.text = ""
+    }
+    
     /*
     // MARK: - Navigation
 

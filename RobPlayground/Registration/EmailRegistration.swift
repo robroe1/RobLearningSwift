@@ -74,6 +74,9 @@ class EmailRegistration: UIViewController {
         }
     }
     
+    @IBAction func textFieldClicked(_ sender: UITextField) {
+        sender.text = ""
+    }
     
     /*
     // MARK: - Navigation
