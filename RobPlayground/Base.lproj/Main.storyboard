@@ -115,7 +115,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="BMp-DU-uTj"/>
                     <connections>
-                        <outlet property="nameTextField" destination="Ixk-KN-4LB" id="UL7-xB-SsR"/>
+                        <outlet property="firstNameTextField" destination="Ixk-KN-4LB" id="UL7-xB-SsR"/>
                         <outlet property="nextButton" destination="ri5-LF-zhv" id="MIz-Ae-6UC"/>
                         <segue destination="TQn-HB-LyZ" kind="presentation" identifier="nextToLastName" modalPresentationStyle="fullScreen" id="c4r-QE-pzV"/>
                     </connections>
@@ -277,7 +277,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="cTn-tQ-GX4"/>
                     <connections>
-                        <outlet property="nameTextField" destination="LOg-YT-2dT" id="HuB-EH-qeK"/>
+                        <outlet property="lastNameTextField" destination="LOg-YT-2dT" id="HuB-EH-qeK"/>
                         <outlet property="nextButton" destination="cSB-if-H7z" id="6Fk-69-Gwf"/>
                         <segue destination="pb2-Bs-ZdU" kind="presentation" identifier="nextToUsername" modalPresentationStyle="fullScreen" id="F3A-yW-ezy"/>
                     </connections>
@@ -346,7 +346,7 @@
                                     <color key="titleColor" systemColor="systemPurpleColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IbJ-UC-3mo" kind="presentation" identifier="PasswordNextButtonRegistration" modalPresentationStyle="fullScreen" id="JHp-ai-fIj"/>
+                                    <action selector="nextButtonClicked:" destination="pb2-Bs-ZdU" eventType="touchUpInside" id="IkO-RR-E90"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -357,6 +357,7 @@
                     <connections>
                         <outlet property="nextButton" destination="GYo-01-tpt" id="FBu-gc-QaD"/>
                         <outlet property="usernameTextField" destination="3qm-nX-mH0" id="GLX-9z-xC8"/>
+                        <segue destination="IbJ-UC-3mo" kind="presentation" identifier="nextToPassword" modalPresentationStyle="fullScreen" id="0XN-GP-HUW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpP-d2-uxt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -605,10 +606,10 @@
             </objects>
             <point key="canvasLocation" x="4686.9565217391309" y="211.60714285714286"/>
         </scene>
-        <!--Passcode Registration-->
+        <!--Password Registration-->
         <scene sceneID="8ny-Qy-UVJ">
             <objects>
-                <viewController id="IbJ-UC-3mo" customClass="PasscodeRegistration" customModule="RobPlayground" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IbJ-UC-3mo" customClass="PasswordRegistration" customModule="RobPlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GGf-P4-99h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1312,11 +1313,11 @@
         <segue reference="mRL-Xr-YsW"/>
         <segue reference="E89-aJ-Aw1"/>
         <segue reference="p7m-kt-WFQ"/>
-        <segue reference="JHp-ai-fIj"/>
+        <segue reference="0XN-GP-HUW"/>
         <segue reference="JSa-BT-wy8"/>
         <segue reference="bI6-lb-2GL"/>
         <segue reference="lbF-7C-UC9"/>
-        <segue reference="F3A-yW-ezy"/>
+        <segue reference="bsm-EH-mMZ"/>
         <segue reference="b4a-ti-jtI"/>
         <segue reference="WH0-Pr-sZ0"/>
         <segue reference="nVO-7N-cTw"/>

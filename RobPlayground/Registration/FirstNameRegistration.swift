@@ -11,7 +11,7 @@ class FirstNameRegistration: UIViewController {
 
     @IBOutlet var nextButton: UIButton!
         
-    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var firstNameTextField: UITextField!
     
     public var firstname: String = ""
     
@@ -57,11 +57,9 @@ class FirstNameRegistration: UIViewController {
     
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
-        let str = nameTextField.text
+        let str = firstNameTextField.text
         if checkString(str: str) == true {
             firstname = str!
-            let vc = LastNameRegistration()
-            vc.firstname = firstname
             performSegue(withIdentifier: "nextToLastName", sender: nil)
         }
     }

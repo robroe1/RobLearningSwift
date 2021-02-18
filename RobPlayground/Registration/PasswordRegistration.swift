@@ -7,7 +7,13 @@
 
 import UIKit
 
-class PasscodeRegistration: UIViewController {
+class PasswordRegistration: UIViewController {
+
+    
+    public var firstname: String = ""
+    public var lastname: String = ""
+    public var username: String = ""
+    public var password: String = ""
 
    
     @IBOutlet var NextButton: UIButton!
@@ -22,6 +28,8 @@ class PasscodeRegistration: UIViewController {
         NextButton.layer.borderColor = UIColor.white.cgColor
 
         NextButton.layer.cornerRadius = NextButton.frame.height / 2
+        
+        print(firstname + " " + lastname + " " + username)
 
     
             // Do any additional setup after loading the view.

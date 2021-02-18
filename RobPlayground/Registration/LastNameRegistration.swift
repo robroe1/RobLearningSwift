@@ -14,7 +14,7 @@ class LastNameRegistration: UIViewController {
 
     @IBOutlet var nextButton: UIButton!
     
-    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var lastNameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,11 +64,9 @@ class LastNameRegistration: UIViewController {
     }
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
-        let str = nameTextField.text
+        let str = lastNameTextField.text
         if checkString(str: str) == true {
             lastname = str!
-            let vc = UsernameRegistration()
-            vc.lastname = lastname
             performSegue(withIdentifier: "nextToUsername", sender: nil)
         }
     }

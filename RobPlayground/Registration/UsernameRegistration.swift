@@ -34,6 +34,37 @@ class UsernameRegistration: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    private func checkString(str: String?) -> Bool {
+        if str == nil {
+            return false
+        } else if str?.contains(" ") == true{
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    @IBAction func nextButtonClicked(_ sender: UIButton) {
+        let str = usernameTextField.text
+        if checkString(str: str) == true {
+            username = str!
+            performSegue(withIdentifier: "nextToPassword", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is PasswordRegistration
+        {
+            let vc = segue.destination as? PasswordRegistration
+            vc?.firstname = self.firstname
+            vc?.lastname = self.lastname
+            vc?.username = self.username
+        }
+    }
+    
+
 
     /*
     // MARK: - Navigation
