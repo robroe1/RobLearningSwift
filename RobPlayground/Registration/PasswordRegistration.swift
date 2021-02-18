@@ -18,7 +18,7 @@ class PasswordRegistration: UIViewController {
    
     @IBOutlet var NextButton: UIButton!
     
-    @IBOutlet var BackButton: UIButton!
+    @IBOutlet var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,27 @@ class PasswordRegistration: UIViewController {
 
     
             // Do any additional setup after loading the view.
+    }
+
+    
+    @IBAction func nextButtonClicked(_ sender: UIButton) {
+        let str = passwordTextField.text
+        if str != nil {
+            password = str!
+            performSegue(withIdentifier: "nextToEmail", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is EmailRegistration
+        {
+            let vc = segue.destination as? EmailRegistration
+            vc?.firstname = self.firstname
+            vc?.lastname = self.lastname
+            vc?.username = self.username
+            vc?.password = self.password
+        }
     }
     
 

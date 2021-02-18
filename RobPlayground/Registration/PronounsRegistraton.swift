@@ -8,6 +8,13 @@
 import UIKit
 
 class PronounsRegistraton: UIViewController {
+    
+    public var firstname: String = ""
+    public var lastname: String = ""
+    public var username: String = ""
+    public var password: String = ""
+    public var pronouns: String = ""
+
 
     @IBOutlet var NextButton: UIButton!
     
@@ -24,7 +31,6 @@ class PronounsRegistraton: UIViewController {
     @IBOutlet var OtherButton: UIButton!
     
     
-    @IBOutlet var BackButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,7 +74,7 @@ class PronounsRegistraton: UIViewController {
         OtherButton.layer.cornerRadius = NextButton.frame.height / 2
         
         
-        
+        print(firstname + " " + lastname + " " + username + " " + password)
         
         // Do any additional setup after loading the view.
     }

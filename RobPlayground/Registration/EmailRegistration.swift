@@ -8,6 +8,14 @@
 import UIKit
 
 class EmailRegistration: UIViewController {
+    
+    public var firstname: String = ""
+    public var lastname: String = ""
+    public var username: String = ""
+    public var password: String = ""
+    public var pronouns: String = ""
+    
+    
 
     @IBOutlet var NextButton: UIButton!
     
@@ -23,6 +31,8 @@ class EmailRegistration: UIViewController {
 
         NextButton.layer.cornerRadius = NextButton.frame.height / 2
         
+        
+        print(firstname + " " + lastname + " " + username + " " + password)
 
         // Do any additional setup after loading the view.
     }

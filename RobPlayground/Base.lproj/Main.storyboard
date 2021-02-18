@@ -666,7 +666,7 @@
                                     <color key="titleColor" systemColor="systemPurpleColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="26b-xC-iws" kind="presentation" identifier="EmailNextButtonRegistration" modalPresentationStyle="fullScreen" id="p7m-kt-WFQ"/>
+                                    <action selector="nextButtonClicked:" destination="IbJ-UC-3mo" eventType="touchUpInside" id="Bgm-vh-dFi"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Penguin Sticker 24" translatesAutoresizingMaskIntoConstraints="NO" id="sB9-gE-QwP">
@@ -680,6 +680,8 @@
                     <navigationItem key="navigationItem" id="rsK-Jl-ZzY"/>
                     <connections>
                         <outlet property="NextButton" destination="cpw-NH-S3A" id="sGp-1S-7Fb"/>
+                        <outlet property="passwordTextField" destination="cMA-qD-bMU" id="l3I-Px-qeE"/>
+                        <segue destination="26b-xC-iws" kind="presentation" identifier="nextToEmail" modalPresentationStyle="fullScreen" id="cIr-Al-gKO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcM-cu-DcC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1312,9 +1314,9 @@
         <segue reference="QmV-pW-giQ"/>
         <segue reference="mRL-Xr-YsW"/>
         <segue reference="E89-aJ-Aw1"/>
-        <segue reference="p7m-kt-WFQ"/>
-        <segue reference="0XN-GP-HUW"/>
-        <segue reference="JSa-BT-wy8"/>
+        <segue reference="cIr-Al-gKO"/>
+        <segue reference="ile-Sz-zfG"/>
+        <segue reference="Gue-5K-AUA"/>
         <segue reference="bI6-lb-2GL"/>
         <segue reference="lbF-7C-UC9"/>
         <segue reference="bsm-EH-mMZ"/>
