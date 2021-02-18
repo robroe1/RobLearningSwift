@@ -65,13 +65,7 @@ class BirthdateRegistration: UIViewController {
     
     
     @IBAction func SubmitButtonClicked(_ sender: UIButton) {
-//        RegisterUser()
-        
-        print(email)
-        print(password)
-        print(firstname)
-        print(lastname)
-
+        RegisterUser()
     }
     
     
@@ -82,7 +76,7 @@ class BirthdateRegistration: UIViewController {
 
         
         // create the user
-        Auth.auth().createUser(withEmail: "its.alex203@gmail.com", password: "Password#123") { (result, err) in
+        Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
             
             // Check for errors
             if err != nil {
@@ -94,7 +88,7 @@ class BirthdateRegistration: UIViewController {
                 // User was created successfully, now store the attributes
                 let db = Firestore.firestore()
                 
-                db.collection("users").addDocument(data: ["firstname": self.firstname, "lastname": self.lastname, "uid": result!.user.uid]) { (error) in
+                db.collection("users").addDocument(data: ["firstname": self.firstname, "lastname": self.lastname, "email": self.email, "password": self.password, "uid": result!.user.uid, "pronouns": self.pronouns]) { (error) in
                     
                     if error != nil {
                         // Show error message
