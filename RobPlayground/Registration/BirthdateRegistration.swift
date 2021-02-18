@@ -6,8 +6,15 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class BirthdateRegistration: UIViewController {
+    
+    public let email = "test@gmail.com"
+    public let password = "test"
+    public let firstname = "Timmy"
+    public let lastname = "Tester"
 
     @IBOutlet var SubmitButton: UIButton!
     
@@ -51,7 +58,46 @@ class BirthdateRegistration: UIViewController {
     
     
     
+    @IBAction func SubmitButtonClicked(_ sender: UIButton) {
+        RegisterUser()
+    }
     
+    
+    
+    
+    private func RegisterUser() {
+        print("Regstering user")
+
+        
+        // create the user
+        Auth.auth().createUser(withEmail: "its.alex203@gmail.com", password: "Password#123") { (result, err) in
+            
+            // Check for errors
+            if err != nil {
+                // There was an error creating the user
+                print("Error creating user")
+            }
+            else {
+                
+                // User was created successfully, now store the attributes
+                let db = Firestore.firestore()
+                
+                db.collection("users").addDocument(data: ["firstname": self.firstname, "lastname": self.lastname, "uid": result!.user.uid]) { (error) in
+                    
+                    if error != nil {
+                        // Show error message
+                        print("Error setting up user")
+                        print(error.debugDescription)
+                    }
+                    
+                }
+                
+            }
+            
+        }
+        
+        
+    }
     
     /*
     // MARK: - Navigation

@@ -143,6 +143,7 @@
                                     <color key="titleColor" systemColor="systemPurpleColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="SubmitButtonClicked:" destination="3GN-rs-qtA" eventType="touchUpInside" id="fIJ-nC-rTE"/>
                                     <segue destination="8l1-Bu-WOg" kind="presentation" identifier="SubmitNextButtonInfo" modalPresentationStyle="fullScreen" id="WXX-aI-DWC"/>
                                 </connections>
                             </button>
@@ -1299,6 +1300,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="NbQ-KK-Urz"/>
         <segue reference="WXX-aI-DWC"/>
         <segue reference="ViU-8I-qFr"/>
         <segue reference="olp-JH-6f0"/>
@@ -1307,7 +1309,7 @@
         <segue reference="E89-aJ-Aw1"/>
         <segue reference="p7m-kt-WFQ"/>
         <segue reference="JHp-ai-fIj"/>
-        <segue reference="Gue-5K-AUA"/>
+        <segue reference="JSa-BT-wy8"/>
         <segue reference="bI6-lb-2GL"/>
         <segue reference="lbF-7C-UC9"/>
         <segue reference="dha-Gm-GFf"/>

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -115,6 +115,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A37609D25DDE83300F82630 /* InfoPages */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFA2C025DC4EF900EC6B10 /* PgOneSpecialInfo.swift */,
+				D1EFA2C525DC4F4C00EC6B10 /* PgTwoNowInfo.swift */,
+				D1EFA2D725DC506300EC6B10 /* PgThreeStopInfo.swift */,
+				D1EFA2CF25DC504100EC6B10 /* PgFourBadInfo.swift */,
+				D1EFA2DC25DC508100EC6B10 /* PgFiveRelaxInfo.swift */,
+				D1EFA2EB25DC50FD00EC6B10 /* PgSixPinInfo.swift */,
+				D1EFA2E125DC50A600EC6B10 /* PgSevenSmilesInfo.swift */,
+				D1EFA2E625DC50C000EC6B10 /* PgEightTeenInfo.swift */,
+			);
+			path = InfoPages;
+			sourceTree = "<group>";
+		};
 		D1B36D3825DA0A8800468207 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +155,7 @@
 		D1B36D4325DA0A8800468207 /* RobPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				7A37609D25DDE83300F82630 /* InfoPages */,
 				D1B36D7C25DA0BCD00468207 /* Registration */,
 				D1B36D4425DA0A8800468207 /* AppDelegate.swift */,
 				D1B36D4625DA0A8800468207 /* SceneDelegate.swift */,
@@ -182,14 +198,6 @@
 				D1A1DC2B25DB1B5A001F40DE /* PronounsRegistraton.swift */,
 				D1A1DC2325DB197A001F40DE /* BirthdateRegistration.swift */,
 				D1E412EA25DAFC8E00B91B89 /* ProfileRegistration.swift */,
-				D1EFA2C025DC4EF900EC6B10 /* PgOneSpecialInfo.swift */,
-				D1EFA2C525DC4F4C00EC6B10 /* PgTwoNowInfo.swift */,
-				D1EFA2D725DC506300EC6B10 /* PgThreeStopInfo.swift */,
-				D1EFA2CF25DC504100EC6B10 /* PgFourBadInfo.swift */,
-				D1EFA2DC25DC508100EC6B10 /* PgFiveRelaxInfo.swift */,
-				D1EFA2EB25DC50FD00EC6B10 /* PgSixPinInfo.swift */,
-				D1EFA2E125DC50A600EC6B10 /* PgSevenSmilesInfo.swift */,
-				D1EFA2E625DC50C000EC6B10 /* PgEightTeenInfo.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -200,7 +208,6 @@
 				EA8354E0533C35D1895444CD /* Pods-RobPlayground.debug.xcconfig */,
 				86BE558C11328EA417C99008 /* Pods-RobPlayground.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -511,7 +518,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -566,7 +573,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
