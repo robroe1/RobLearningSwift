@@ -79,7 +79,7 @@
                                     <color key="titleColor" systemColor="systemPurpleColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TQn-HB-LyZ" kind="presentation" identifier="LastNameNextButtonRegistration" modalPresentationStyle="fullScreen" id="zIU-sf-WeK"/>
+                                    <action selector="nextButtonClicked:" destination="BxS-wF-ItL" eventType="touchUpInside" id="tue-No-GXe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Protecting your Privacy is #1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IV8-BS-3Zg">
@@ -115,7 +115,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="BMp-DU-uTj"/>
                     <connections>
+                        <outlet property="NameTextField" destination="Ixk-KN-4LB" id="UL7-xB-SsR"/>
                         <outlet property="NextButton" destination="ri5-LF-zhv" id="MIz-Ae-6UC"/>
+                        <segue destination="TQn-HB-LyZ" kind="presentation" identifier="nextToLastName" modalPresentationStyle="fullScreen" id="heT-KF-dtt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Gt-xO-XgX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1300,7 +1302,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="NbQ-KK-Urz"/>
         <segue reference="WXX-aI-DWC"/>
         <segue reference="ViU-8I-qFr"/>
         <segue reference="olp-JH-6f0"/>
@@ -1313,7 +1314,7 @@
         <segue reference="bI6-lb-2GL"/>
         <segue reference="lbF-7C-UC9"/>
         <segue reference="dha-Gm-GFf"/>
-        <segue reference="zIU-sf-WeK"/>
+        <segue reference="heT-KF-dtt"/>
         <segue reference="WH0-Pr-sZ0"/>
         <segue reference="nVO-7N-cTw"/>
     </inferredMetricsTieBreakers>

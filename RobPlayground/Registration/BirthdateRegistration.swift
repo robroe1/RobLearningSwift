@@ -11,10 +11,10 @@ import Firebase
 
 class BirthdateRegistration: UIViewController {
     
-    public let email = "test@gmail.com"
-    public let password = "test"
-    public let firstname = "Timmy"
-    public let lastname = "Tester"
+    var email = ""
+    var password = ""
+    var firstname = ""
+    var lastname = ""
 
     @IBOutlet var SubmitButton: UIButton!
     
@@ -59,7 +59,13 @@ class BirthdateRegistration: UIViewController {
     
     
     @IBAction func SubmitButtonClicked(_ sender: UIButton) {
-        RegisterUser()
+//        RegisterUser()
+        
+        print(email)
+        print(password)
+        print(firstname)
+        print(lastname)
+
     }
     
     
