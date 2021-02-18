@@ -13,6 +13,7 @@ class FirstNameRegistration: UIViewController {
         
     @IBOutlet var NameTextField: UITextField!
     
+    public var firstname: String = ""
     
     
     override func viewDidLoad() {
@@ -56,11 +57,21 @@ class FirstNameRegistration: UIViewController {
     
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
-        let input = NameTextField.text
-        if checkString(str: input) == true {
-            let vc = BirthdateRegistration()
-            vc.firstname = input!
+        let str = NameTextField.text
+        if checkString(str: str) == true {
+            firstname = str!
+            let vc = LastNameRegistration()
+            vc.firstname = firstname
             performSegue(withIdentifier: "nextToLastName", sender: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is LastNameRegistration
+        {
+            let vc = segue.destination as? LastNameRegistration
+            vc?.firstname = self.firstname
         }
     }
     

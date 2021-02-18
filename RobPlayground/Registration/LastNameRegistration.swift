@@ -8,6 +8,9 @@
 import UIKit
 
 class LastNameRegistration: UIViewController {
+    
+    public var firstname: String = ""
+    public var lastname: String = ""
 
     @IBOutlet var NextButton: UIButton!
     
@@ -22,6 +25,8 @@ class LastNameRegistration: UIViewController {
         NextButton.layer.borderColor = UIColor.white.cgColor
 
         NextButton.layer.cornerRadius = NextButton.frame.height / 2
+        
+        print(firstname)
         
         
         // Do any additional setup after loading the view.
