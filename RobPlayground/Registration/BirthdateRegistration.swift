@@ -88,15 +88,7 @@ class BirthdateRegistration: UIViewController {
                 // User was created successfully, now store the attributes
                 let db = Firestore.firestore()
                 
-                db.collection("users").addDocument(data: ["firstname": self.firstname, "lastname": self.lastname, "email": self.email, "password": self.password, "uid": result!.user.uid, "pronouns": self.pronouns]) { (error) in
-                    
-                    if error != nil {
-                        // Show error message
-                        print("Error setting up user")
-                        print(error.debugDescription)
-                    }
-                    
-                }
+                db.collection("users").document(result!.user.uid).setData(["firstname": self.firstname, "lastname": self.lastname, "pronouns": self.pronouns])
                 
             }
             
