@@ -13,6 +13,7 @@ class PronounsRegistraton: UIViewController {
     public var lastname: String = ""
     public var username: String = ""
     public var password: String = ""
+    public var email: String = ""
     public var pronouns: String = ""
 
 
@@ -74,7 +75,7 @@ class PronounsRegistraton: UIViewController {
         OtherButton.layer.cornerRadius = NextButton.frame.height / 2
         
         
-        print(firstname + " " + lastname + " " + username + " " + password)
+        print(firstname + " " + lastname + " " + username + " " + password + " " + email)
         
         // Do any additional setup after loading the view.
     }

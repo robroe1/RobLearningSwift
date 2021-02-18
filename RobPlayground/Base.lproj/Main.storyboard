@@ -679,7 +679,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rsK-Jl-ZzY"/>
                     <connections>
-                        <outlet property="NextButton" destination="cpw-NH-S3A" id="sGp-1S-7Fb"/>
+                        <outlet property="nextButton" destination="cpw-NH-S3A" id="sGp-1S-7Fb"/>
                         <outlet property="passwordTextField" destination="cMA-qD-bMU" id="l3I-Px-qeE"/>
                         <segue destination="26b-xC-iws" kind="presentation" identifier="nextToEmail" modalPresentationStyle="fullScreen" id="cIr-Al-gKO"/>
                     </connections>
@@ -732,7 +732,7 @@
                                     <color key="titleColor" systemColor="systemPurpleColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="FUb-co-1qD" kind="presentation" identifier="NextButtonPronounsRegistration" modalPresentationStyle="fullScreen" id="Gue-5K-AUA"/>
+                                    <action selector="nextButtonClicked:" destination="26b-xC-iws" eventType="touchUpInside" id="jMc-DJ-jF6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In case we need a way to reach you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hG0-R3-3zD">
@@ -775,7 +775,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="vLA-Kb-ZSz"/>
                     <connections>
-                        <outlet property="NextButton" destination="U96-9f-283" id="YaO-dR-GsJ"/>
+                        <outlet property="emailTextField" destination="g7y-WN-Cff" id="ImF-Jr-gz2"/>
+                        <outlet property="nextButton" destination="U96-9f-283" id="YaO-dR-GsJ"/>
+                        <segue destination="FUb-co-1qD" kind="presentation" identifier="nextToPronouns" modalPresentationStyle="fullScreen" id="DPY-XL-YQO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jdu-IN-PnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1316,7 +1318,7 @@
         <segue reference="E89-aJ-Aw1"/>
         <segue reference="cIr-Al-gKO"/>
         <segue reference="ile-Sz-zfG"/>
-        <segue reference="Gue-5K-AUA"/>
+        <segue reference="DPY-XL-YQO"/>
         <segue reference="bI6-lb-2GL"/>
         <segue reference="lbF-7C-UC9"/>
         <segue reference="bsm-EH-mMZ"/>

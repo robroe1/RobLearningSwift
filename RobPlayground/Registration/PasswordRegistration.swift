@@ -16,18 +16,18 @@ class PasswordRegistration: UIViewController {
     public var password: String = ""
 
    
-    @IBOutlet var NextButton: UIButton!
+    @IBOutlet var nextButton: UIButton!
     
     @IBOutlet var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NextButton.layer.borderWidth = 2
+        nextButton.layer.borderWidth = 2
         
-        NextButton.layer.borderColor = UIColor.white.cgColor
+        nextButton.layer.borderColor = UIColor.white.cgColor
 
-        NextButton.layer.cornerRadius = NextButton.frame.height / 2
+        nextButton.layer.cornerRadius = nextButton.frame.height / 2
         
         print(firstname + " " + lastname + " " + username)
 
