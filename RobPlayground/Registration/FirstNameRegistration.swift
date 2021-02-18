@@ -9,9 +9,9 @@ import UIKit
 
 class FirstNameRegistration: UIViewController {
 
-    @IBOutlet var NextButton: UIButton!
+    @IBOutlet var nextButton: UIButton!
         
-    @IBOutlet var NameTextField: UITextField!
+    @IBOutlet var nameTextField: UITextField!
     
     public var firstname: String = ""
     
@@ -19,9 +19,9 @@ class FirstNameRegistration: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NextButton.layer.borderWidth = 2
-        NextButton.layer.borderColor = UIColor.white.cgColor
-        NextButton.layer.cornerRadius = NextButton.frame.height / 2
+        nextButton.layer.borderWidth = 2
+        nextButton.layer.borderColor = UIColor.white.cgColor
+        nextButton.layer.cornerRadius = nextButton.frame.height / 2
         
     }
     
@@ -57,7 +57,7 @@ class FirstNameRegistration: UIViewController {
     
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
-        let str = NameTextField.text
+        let str = nameTextField.text
         if checkString(str: str) == true {
             firstname = str!
             let vc = LastNameRegistration()

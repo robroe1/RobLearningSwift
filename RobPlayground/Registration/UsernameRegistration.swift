@@ -9,20 +9,26 @@ import UIKit
 
 class UsernameRegistration: UIViewController {
 
+    public var firstname: String = ""
+    public var lastname: String = ""
+    public var username: String = ""
+
+    @IBOutlet var nextButton: UIButton!
+        
+    @IBOutlet var usernameTextField: UITextField!
     
-    @IBOutlet var NextButton: UIButton!
-    
-    @IBOutlet var BackButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
-        NextButton.layer.borderWidth = 2
+        nextButton.layer.borderWidth = 2
         
-        NextButton.layer.borderColor = UIColor.white.cgColor
+        nextButton.layer.borderColor = UIColor.white.cgColor
 
-        NextButton.layer.cornerRadius = NextButton.frame.height / 2
+        nextButton.layer.cornerRadius = nextButton.frame.height / 2
+        
+        print(firstname + " " + lastname)
         
         
         // Do any additional setup after loading the view.
