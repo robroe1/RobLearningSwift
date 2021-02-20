@@ -180,17 +180,6 @@
                                     <action selector="TermsServiceClick:" destination="3GN-rs-qtA" eventType="touchUpInside" id="fXa-iV-Uck"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bv-YT-3aR">
-                                <rect key="frame" x="21" y="5" width="130" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="&lt; back">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="FUb-co-1qD" kind="presentation" identifier="BackButtonBirthdateRegistration" modalPresentationStyle="fullScreen" id="JSa-BT-wy8"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select your Birthdate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3a-Hv-xQ6">
                                 <rect key="frame" x="17" y="127" width="392" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -198,6 +187,17 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bv-YT-3aR">
+                                <rect key="frame" x="0.0" y="44" width="130" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="&lt; back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FUb-co-1qD" kind="presentation" identifier="backToPronouns" modalPresentationStyle="fullScreen" id="tMW-4o-bVq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OvA-yh-Dd9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -274,7 +274,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BxS-wF-ItL" kind="presentation" identifier="BackButtonFirstNameRegistration" modalPresentationStyle="fullScreen" id="nVO-7N-cTw"/>
+                                    <segue destination="BxS-wF-ItL" kind="presentation" identifier="backToFirstName" modalPresentationStyle="fullScreen" id="jFz-Fw-zf6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -331,17 +331,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqO-SP-tde">
-                                <rect key="frame" x="0.0" y="44" width="130" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="&lt; back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="TQn-HB-LyZ" kind="presentation" identifier="BackButtonUsernameRegistration" id="b4a-ti-jtI"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RegistrationPg1PenguinSticker" translatesAutoresizingMaskIntoConstraints="NO" id="26l-Fw-p7n">
                                 <rect key="frame" x="113" y="14" width="201" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -356,6 +345,17 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonClicked:" destination="pb2-Bs-ZdU" eventType="touchUpInside" id="IkO-RR-E90"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqO-SP-tde">
+                                <rect key="frame" x="0.0" y="44" width="130" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="&lt; back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TQn-HB-LyZ" kind="presentation" identifier="backToLastName" modalPresentationStyle="fullScreen" id="rIf-Lc-Cp7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -521,17 +521,6 @@
                                 <rect key="frame" x="0.0" y="-69" width="414" height="1035"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0g4-12-dn3">
-                                <rect key="frame" x="0.0" y="44" width="130" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="&lt; back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="26b-xC-iws" kind="presentation" identifier="BackButtonPronounsRegistration" modalPresentationStyle="fullScreen" id="g8p-yD-b5z"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We support diversity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUO-ff-h6Y">
                                 <rect key="frame" x="21" y="719" width="384" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -610,6 +599,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0g4-12-dn3">
+                                <rect key="frame" x="0.0" y="44" width="130" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="&lt; back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="26b-xC-iws" kind="presentation" identifier="backToEmail" modalPresentationStyle="fullScreen" id="yjE-bw-xaO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Sp-iE-qmc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -671,17 +671,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUj-qo-yta">
-                                <rect key="frame" x="6" y="44" width="130" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="&lt; back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="pb2-Bs-ZdU" kind="presentation" identifier="BackButtonPasscodeRegistration" modalPresentationStyle="fullScreen" id="bsm-EH-mMZ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpw-NH-S3A">
                                 <rect key="frame" x="68" y="530" width="279" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -698,6 +687,17 @@
                                 <rect key="frame" x="95" y="44" width="230" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUj-qo-yta">
+                                <rect key="frame" x="6" y="44" width="130" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="&lt; back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pb2-Bs-ZdU" kind="presentation" identifier="backToUsername" modalPresentationStyle="fullScreen" id="rrg-Qk-rDy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rmz-eV-poJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -782,21 +782,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue Heart Penguin Fixed" translatesAutoresizingMaskIntoConstraints="NO" id="KOJ-mh-z2A">
+                                <rect key="frame" x="157" y="89" width="111" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFn-OQ-pCU">
-                                <rect key="frame" x="0.0" y="44" width="130" height="58"/>
+                                <rect key="frame" x="6" y="44" width="130" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="&lt; back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="IbJ-UC-3mo" kind="presentation" modalPresentationStyle="fullScreen" id="ile-Sz-zfG"/>
+                                    <segue destination="IbJ-UC-3mo" kind="presentation" identifier="backToPassword" modalPresentationStyle="fullScreen" id="KYc-fU-yyV"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue Heart Penguin Fixed" translatesAutoresizingMaskIntoConstraints="NO" id="KOJ-mh-z2A">
-                                <rect key="frame" x="157" y="89" width="111" height="138"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g6R-sm-mBH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1354,15 +1354,15 @@
         <segue reference="ViU-8I-qFr"/>
         <segue reference="Bvr-9f-nkc"/>
         <segue reference="kfW-GA-POW"/>
-        <segue reference="g8p-yD-b5z"/>
-        <segue reference="ile-Sz-zfG"/>
-        <segue reference="JSa-BT-wy8"/>
+        <segue reference="cIr-Al-gKO"/>
+        <segue reference="0XN-GP-HUW"/>
+        <segue reference="DPY-XL-YQO"/>
         <segue reference="bI6-lb-2GL"/>
         <segue reference="3SS-At-XJn"/>
-        <segue reference="bsm-EH-mMZ"/>
-        <segue reference="c4r-QE-pzV"/>
+        <segue reference="rrg-Qk-rDy"/>
+        <segue reference="rIf-Lc-Cp7"/>
         <segue reference="kG8-VN-vXx"/>
-        <segue reference="nVO-7N-cTw"/>
+        <segue reference="jFz-Fw-zf6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="1234" width="1024" height="1024"/>

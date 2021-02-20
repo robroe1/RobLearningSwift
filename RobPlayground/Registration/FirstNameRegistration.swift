@@ -23,6 +23,10 @@ class FirstNameRegistration: UIViewController {
         nextButton.layer.borderColor = UIColor.white.cgColor
         nextButton.layer.cornerRadius = nextButton.frame.height / 2
         
+        if firstname != "" {
+            firstNameTextField.text = firstname
+        }
+        
     }
     
     private func checkString(str: String?) -> Bool {

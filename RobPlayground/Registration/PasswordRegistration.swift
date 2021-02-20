@@ -31,6 +31,9 @@ class PasswordRegistration: UIViewController {
         
         print(firstname + " " + lastname + " " + username)
 
+        if password != "" {
+            passwordTextField.text = password
+        }
     
             // Do any additional setup after loading the view.
     }
@@ -53,6 +56,14 @@ class PasswordRegistration: UIViewController {
             vc?.lastname = self.lastname
             vc?.username = self.username
             vc?.password = self.password
+        }
+        
+        if segue.destination is UsernameRegistration
+        {
+            let vc = segue.destination as? UsernameRegistration
+            vc?.firstname = self.firstname
+            vc?.lastname = self.lastname
+            vc?.username = self.username
         }
     }
     

@@ -34,6 +34,10 @@ class EmailRegistration: UIViewController {
         
         
         print(firstname + " " + lastname + " " + username + " " + password)
+        
+        if email != "" {
+            emailTextField.text = email
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -71,6 +75,15 @@ class EmailRegistration: UIViewController {
             vc?.username = self.username
             vc?.password = self.password
             vc?.email = self.email
+        }
+        
+        if segue.destination is PasswordRegistration
+        {
+            let vc = segue.destination as? PasswordRegistration
+            vc?.firstname = self.firstname
+            vc?.lastname = self.lastname
+            vc?.username = self.username
+            vc?.password = self.password
         }
     }
     

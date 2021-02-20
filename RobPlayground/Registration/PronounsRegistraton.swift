@@ -66,53 +66,71 @@ class PronounsRegistraton: UIViewController {
 
         OtherButton.layer.cornerRadius = OtherButton.frame.height / 2
         
+        selectButton()
+        
         
         print(firstname + " " + lastname + " " + username + " " + password + " " + email)
         
         // Do any additional setup after loading the view.
     }
     
+    private func selectButton() {
+        switch pronouns {
+        case "she/her":
+            HeHimButton.backgroundColor = .gray
+            TheyThemButton.backgroundColor = .gray
+            OtherButton.backgroundColor = .gray
+            SheHerButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        case "he/him":
+            HeHimButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+            TheyThemButton.backgroundColor = .gray
+            OtherButton.backgroundColor = .gray
+            SheHerButton.backgroundColor = .gray
+        case "they/them":
+            HeHimButton.backgroundColor = .gray
+            TheyThemButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+            OtherButton.backgroundColor = .gray
+            SheHerButton.backgroundColor = .gray
+        case "other":
+            HeHimButton.backgroundColor = .gray
+            TheyThemButton.backgroundColor = .gray
+            OtherButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+            SheHerButton.backgroundColor = .gray
+        default:
+            HeHimButton.backgroundColor = .gray
+            TheyThemButton.backgroundColor = .gray
+            OtherButton.backgroundColor = .gray
+            SheHerButton.backgroundColor = .gray
+        }
+    }
+    
     
     @IBAction func sheButtonClicked(_ sender: UIButton) {
         pronouns = "she/her"
-        HeHimButton.backgroundColor = .gray
-        TheyThemButton.backgroundColor = .gray
-        OtherButton.backgroundColor = .gray
-        SheHerButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-
-
+        selectButton()
     }
     
     @IBAction func heButtonClicked(_ sender: UIButton) {
         pronouns = "he/him"
-        HeHimButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-        TheyThemButton.backgroundColor = .gray
-        OtherButton.backgroundColor = .gray
-        SheHerButton.backgroundColor = .gray
+        selectButton()
     }
     
     @IBAction func theyButtonClicked(_ sender: UIButton) {
         pronouns = "they/them"
-        HeHimButton.backgroundColor = .gray
-        TheyThemButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-        OtherButton.backgroundColor = .gray
-        SheHerButton.backgroundColor = .gray
+        selectButton()
     }
     
     @IBAction func otherButtonClicked(_ sender: UIButton) {
         pronouns = "other"
-        HeHimButton.backgroundColor = .gray
-        TheyThemButton.backgroundColor = .gray
-        OtherButton.backgroundColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-        SheHerButton.backgroundColor = .gray
+        selectButton()
     }
     
     @IBAction func nextButtonClicked(_ sender: UIButton) {
         performSegue(withIdentifier: "nextToBirthday", sender: nil)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
         if segue.destination is BirthdateRegistration
         {
             let vc = segue.destination as? BirthdateRegistration
@@ -122,6 +140,17 @@ class PronounsRegistraton: UIViewController {
             vc?.password = self.password
             vc?.email = self.email
             vc?.pronouns = self.pronouns
+
+        }
+        
+        if segue.destination is EmailRegistration
+        {
+            let vc = segue.destination as? EmailRegistration
+            vc?.firstname = self.firstname
+            vc?.lastname = self.lastname
+            vc?.username = self.username
+            vc?.password = self.password
+            vc?.email = self.email
 
         }
     }

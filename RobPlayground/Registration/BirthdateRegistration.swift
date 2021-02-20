@@ -97,6 +97,22 @@ class BirthdateRegistration: UIViewController {
         
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.destination is PronounsRegistraton
+        {
+            let vc = segue.destination as? PronounsRegistraton
+            vc?.firstname = self.firstname
+            vc?.lastname = self.lastname
+            vc?.username = self.username
+            vc?.password = self.password
+            vc?.email = self.email
+            vc?.pronouns = self.pronouns
+
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

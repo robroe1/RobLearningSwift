@@ -28,6 +28,10 @@ class LastNameRegistration: UIViewController {
         
         print(firstname)
         
+        if lastname != "" {
+            lastNameTextField.text = lastname
+        }
+        
         
         // Do any additional setup after loading the view.
     }
@@ -78,6 +82,12 @@ class LastNameRegistration: UIViewController {
             let vc = segue.destination as? UsernameRegistration
             vc?.firstname = self.firstname
             vc?.lastname = self.lastname
+        }
+        
+        if segue.destination is FirstNameRegistration
+        {
+            let vc = segue.destination as? FirstNameRegistration
+            vc?.firstname = self.firstname
         }
     }
     
