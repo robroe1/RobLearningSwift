@@ -19,7 +19,8 @@ class BirthdateRegistration: UIViewController {
     public var pronouns: String = ""
     public var birthday: Timestamp = Timestamp()
 
-
+    @IBOutlet var datePicker: UIDatePicker!
+    
     @IBOutlet var SubmitButton: UIButton!
     
     @IBOutlet var BackButton: UIButton!
@@ -88,7 +89,7 @@ class BirthdateRegistration: UIViewController {
                 // User was created successfully, now store the attributes
                 let db = Firestore.firestore()
                 
-                db.collection("users").document(result!.user.uid).setData(["firstname": self.firstname, "lastname": self.lastname, "pronouns": self.pronouns])
+                db.collection("users").document(result!.user.uid).setData(["firstname": self.firstname, "lastname": self.lastname, "pronouns": self.pronouns, "birthday": self.datePicker.date])
                 
             }
             
