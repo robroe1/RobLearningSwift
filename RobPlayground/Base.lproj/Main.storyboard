@@ -1989,7 +1989,7 @@
         <!--Location Registration-->
         <scene sceneID="R0e-Bo-hxA">
             <objects>
-                <viewController id="Qok-OX-tTY" customClass="LocationRegistration" sceneMemberID="viewController">
+                <viewController id="Qok-OX-tTY" customClass="LocationRegistration" customModule="RobPlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4jk-Oi-cA6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2016,7 +2016,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSO-80-wn6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6426" y="212"/>
+            <point key="canvasLocation" x="6687" y="212"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

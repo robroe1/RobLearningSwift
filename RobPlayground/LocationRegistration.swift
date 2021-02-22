@@ -9,7 +9,7 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class LocationViewController: UIViewController, CLLocationManagerDelegate {
+class LocationRegistration: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
 
     override func viewDidLoad() {
